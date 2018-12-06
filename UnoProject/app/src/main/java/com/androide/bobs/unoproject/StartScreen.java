@@ -35,8 +35,11 @@ public class StartScreen extends AppCompatActivity {
             public void run() {
 //                ActivityOptions opt = ActivityOptions.makeSceneTransitionAnimation(StartScreen.this);
                 Intent i = new Intent(StartScreen.this, MainActivity.class);
+                i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 //                i.putExtra("FADE_JAVA", "Slide")
-                startActivity(i, ActivityOptions.makeSceneTransitionAnimation(StartScreen.this).toBundle());
+//                startActivity(i, ActivityOptions.makeSceneTransitionAnimation(StartScreen.this).toBundle());
+                startActivity(i);
+                finish();
             }
         }, 4000);
     }

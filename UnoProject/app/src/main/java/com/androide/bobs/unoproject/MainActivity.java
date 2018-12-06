@@ -18,8 +18,6 @@ public class MainActivity extends AppCompatActivity {
     private Button btnPlay;
     private Button btnQuit;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
